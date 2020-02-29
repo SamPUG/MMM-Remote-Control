@@ -617,7 +617,7 @@ module.exports = NodeHelper.create(Object.assign({
                             this.sendSocketNotification("USER_PRESENCE", true);
                             return;
                         }
-                    } else if (stdout.indexOf("HDMI") !== -1 || stdout.indexOf("true") !== -1) {
+                    } else if (stdout.indexOf("HDMI") !== -1 || stdout.indexOf("DVI") !== -1 || stdout.indexOf("true") !== -1) {
                         // Screen is ON, turn it OFF
                         status = "on";
                         if (action === "MONITORTOGGLE") {
