@@ -1422,12 +1422,15 @@ var Remote = {
 
 var buttons = {
     // navigation buttons
-    "power-button": function() {
-        window.location.hash = "power-menu";
+    
+    "dev-button": function() {
+        window.location.hash = "dev-menu";
     },
+    
     "edit-button": function() {
         window.location.hash = "edit-menu";
     },
+    /*
     "settings-button": function() {
         var self = Remote;
 
@@ -1448,6 +1451,7 @@ var buttons = {
 
         self.setStatus(false, false, wrapper);
     },
+    */
     "mirror-link-button": function() {
         window.open("/", "_blank");
     },
@@ -1462,12 +1466,14 @@ var buttons = {
         }
         window.location.hash = "main-menu";
     },
+    /*
     "update-button": function() {
         window.location.hash = "update-menu";
     },
     "alert-button": function() {
         window.location.hash = "alert-menu";
     },
+    */
 
     // settings menu buttons
     "brightness-reset": function() {
